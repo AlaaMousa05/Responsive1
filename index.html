@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> res </title>
+        <meta charset="UTF_8" />  <!--نوع ترميز-->
+        <meta name="discription" content=" Quiet Corner shope"/>  <!--وصف-->
+       
+       <link rel="stylesheet" href="resp.css"> 
+       <meta name="viewport" content="width=device-width , initial-scale=1.0">
+       
+    </head>
+    <body>
+        <div class="contenir">
+            <div class="navpar">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/007/642/164/small/headphone-earphone-headset-for-music-line-pop-art-potrait-logo-colorful-design-with-dark-background-abstract-illustration-vector.jpg" class="logo">
+               <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+               </nav>
+                <img src="imgs/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h2>PS4 V2 <br>DuaLshock</h2>
+                    <h3>Wireless Controller for PlayStation 4</h3>
+                    <p>(Compatible/Generic)</p>
+                    <h4>$32.50</h4>
+                    <button type="button">Buy Now <img src="imgs/arrow.png""></button>
+                </div>
+                <div class="col2">
+                    <img src="imgs/controller.png" class="cont">
+                     <div class="color-box"></div> 
+                    <div class="add-btn">
+                        <img src="imgs/add.png">
+                        <p><small>Add to Cart</small></p>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="social-links">
+                <img src="imgs/fb.png">
+                <img src="imgs/tw.png">
+                <img src="imgs/ig.png">
+            </div>
+
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight=="0px")
+                {
+                    menuList.style.maxHeight="130px";
+                }
+                else{
+                    menuList.style.maxHeight="0px";
+                }
+            }
+        </script>
+    </body>
+</html>
